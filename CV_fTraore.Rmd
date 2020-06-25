@@ -1,0 +1,72 @@
+---
+name: Fatoumata-Adama TRAORE
+position: "Ingénieur en Bioinformatique -  Disponibilité immédiate"
+address: "152 Avenue Gabriel Peri, Bezons"
+phone: 07 82 31 61 65
+email: "traorefadamaa@gmail.com"
+linkedin: FATraore
+date: "`r format(Sys.time(), '%B %Y')`"
+profilepic: pic.jpeg 
+headcolor: 414141
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Expériences professionnelles
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ dates, ~ details,
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Octobre 2018 - Janvier 2020 (16 mois)", "Préparation et analyse de données métagénomiques",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Octobre 2018 - Janvier 2020 (16 mois)", "Comparaison et annotation de séquences",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Octobre 2018 - Janvier 2020 (16 mois)", "Construction de catalogue de gènes du microbiote intestinal",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Octobre 2018 - Janvier 2020 (16 mois)", "Reconstruction d’espèces phagiques",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Janvier 2018 - Juillet 2018 (6 mois)", "Identification de gènes de phages du microbiote intestinal ",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Janvier 2018 - Juillet 2018 (6 mois)", "Test d’outils et paramètres de traitement de données métagénomiques",
+  "Ingénieur bioinformaticienne", " INRA - Unité MetagenoPoliS ", "Janvier 2018 - Juillet 2018 (6 mois)", "Construction d’un catalogue de gène",
+  "Bioinformaticienne", " Institut Jacques Monod ", "Mars 2017 - Mai 2017 (3 mois)", "Recolte et homogéniéisation de données",
+  "Bioinformaticienne", " Institut Jacques Monod ", "Mars 2017 - Mai 2017 (3 mois)", "Mise en place de modèles mathématiques pour definir différentes populatins dans les données",
+  "Bioinformaticienne", " Institut Jacques Monod ", "Mars 2017 - Mai 2017 (3 mois)", "Normalisation de l'expression des gènes",
+  "Bioinformaticienne", " Institut Jacques Monod ", "Mars 2017 - Mai 2017 (3 mois)", "Regroupement des cancers selon leur ressemblance",
+  "Bioinformaticienne", " Laboratoire de Biochimie - ESPCI ", "Juin 2016 - Juillet 2016 (1 mois)", "Mise en place d’un programme de traitement de données de séquençage à haut de,it",
+  "Bioinformaticienne", " Centre de Recherche sur les Macromolécules Végétales  ", "Juin 2015 - Juillet 2015 (1 mois)", "Actualisaion et annotation d’une base de données de structures tridimensionnelles de glucides",
+)  %>% 
+  detailed_entries(with = company, what = role, when = dates, why = details)
+```
+
+# Formation
+
+```{r}
+tribble(
+  ~ fac, ~ details, ~ date,
+  "Universite Paris Diderot Paris 7", " Master 1 et 2 Bioinformatique", "2015 - 2018",
+  "Universite Paris Diderot Paris 7", "Licence Biologie Informatique Bioinformatique", "2015 - 2018",
+  "Universite Joseph Fourier Grenoble 1", "Licence 1 et 2 Biologie et informatique" , "2013 - 2015",
+) %>%
+  detailed_entries(what = fac, why = details, when = date)
+```
+
+# Compétences - Informatiques - Langues
+
+```{r}
+tribble(
+  ~ type, ~ details, 
+  "Compétences", " Bioinformatique",
+  "Compétences", "Programmation",
+  "Compétences", "Analyses de données NGS",
+  "Compétences", "Statistiques", 
+  "Compétences", "Base de données",
+  "Informatiques", "Pyhton - R - Linux - Perl - PostgreSQL - HTML/CSS - Java",
+  "Langues", "Français : Courant",
+  "Langues", "Anglais :  Intermediaire"
+) %>%
+  detailed_entries(what = type, why = details)
+```
+

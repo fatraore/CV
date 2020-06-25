@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{pic.jpeg}
+\name{Fatoumata-Adama TRAORE}{}
+
+\position{Ingénieur en Bioinformatique - Disponibilité immédiate}
+\address{152 Avenue Gabriel Peri, Bezons}
+
+\mobile{07 82 31 61 65}
+\email{\href{mailto:traorefadamaa@gmail.com}{\nolinkurl{traorefadamaa@gmail.com}}}
+\linkedin{FATraore}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}\ifx#5\empty{\vspace{-4.0mm}}\else\fi}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {juin 2020}
+    {Fatoumata-Adama TRAORE~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{expuxe9riences-professionnelles}{%
+\section{Expériences professionnelles}\label{expuxe9riences-professionnelles}}
+
+\detailedsection{\detaileditem{Ingénieur bioinformaticienne}{Octobre 2018 - Janvier 2020 (16 mois)}{ INRA - Unité MetagenoPoliS }{}{\item{Préparation et analyse de données métagénomiques}\item{Comparaison et annotation de séquences}\item{Construction de catalogue de gènes du microbiote intestinal}\item{Reconstruction d’espèces phagiques}}\detaileditem{Ingénieur bioinformaticienne}{Janvier 2018 - Juillet 2018 (6 mois)}{ INRA - Unité MetagenoPoliS }{}{\item{Identification de gènes de phages du microbiote intestinal }\item{Test d’outils et paramètres de traitement de données métagénomiques}\item{Construction d’un catalogue de gène}}\detaileditem{Bioinformaticienne}{Mars 2017 - Mai 2017 (3 mois)}{ Institut Jacques Monod }{}{\item{Recolte et homogéniéisation de données}\item{Mise en place de modèles mathématiques pour definir différentes populatins dans les données}\item{Normalisation de l'expression des gènes}\item{Regroupement des cancers selon leur ressemblance}}\detaileditem{Bioinformaticienne}{Juin 2016 - Juillet 2016 (1 mois)}{ Laboratoire de Biochimie - ESPCI }{}{\item{Mise en place d’un programme de traitement de données de séquençage à haut de,it}}\detaileditem{Bioinformaticienne}{Juin 2015 - Juillet 2015 (1 mois)}{ Centre de Recherche sur les Macromolécules Végétales  }{}{\item{Actualisaion et annotation d’une base de données de structures tridimensionnelles de glucides}}}
+
+\hypertarget{formation}{%
+\section{Formation}\label{formation}}
+
+\detailedsection{\detaileditem{Universite Paris Diderot Paris 7}{2015 - 2018}{}{}{\item{ Master 1 et 2 Bioinformatique}\item{Licence Biologie Informatique Bioinformatique}}\detaileditem{Universite Joseph Fourier Grenoble 1}{2013 - 2015}{}{}{\item{Licence 1 et 2 Biologie et informatique}}}
+
+\hypertarget{compuxe9tences---informatiques---langues}{%
+\section{Compétences - Informatiques - Langues}\label{compuxe9tences---informatiques---langues}}
+
+\detailedsection{\detaileditem{Compétences}{}{}{}{\item{ Bioinformatique}\item{Programmation}\item{Analyses de données NGS}\item{Statistiques}\item{Base de données}}\detaileditem{Informatiques}{}{}{}{\item{Pyhton - R - Linux - Perl - PostgreSQL - HTML/CSS - Java}}\detaileditem{Langues}{}{}{}{\item{Français : Courant}\item{Anglais :  Intermediaire}}}
+
+\end{document}
